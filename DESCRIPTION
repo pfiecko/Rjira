@@ -1,12 +1,22 @@
 Package: Rjira
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: This is the simple R wrapper for JIRA REST API.
+Version: 0.0.1
+Author: Piotr Fiecko
+Maintainer: Piotr Fiecko <piotr@pbf.cloud>
+Description: This is the early version of the package which operates within the strictly defined pipeline. It consists of two main function families: Rjira.getJQL functions and Rjira.parseIssues functions.
+Rjira.getJQL functions are functions that will query the JIRA API of your definition and return responses in the form of a list.
+Rjira.parseIssues functions are functions that will take response from Rjira.getJQL functions, parse them and save to SQL database of your choice.
+License: Open Source
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.1
+Imports:
+  dplyr,
+  stringi,
+  RODBC,
+  JSONlite,
+  lubridate,
+  purrr,
+  stringr,
+  httr
